@@ -2,6 +2,20 @@
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
+## Compile and run java code
+1. compiling (slide 8)
+javac --source-path src -d bin src/*
+
+2. running the compiled classes (slide 9)
+java -cp bin App
+
+3. packing to jar (slide 12)
+jar -c -v -f day02-lecture.jar -e App . (Do inside bin folder)
+
+4. run the jar package (slide 12)
+java -cp bin/day02-lecture.jar App (run in project root)
+java -cp day02-lecture.jar App (run inside bin folder)
+
 ## Folder Structure
 
 The workspace contains two folders by default, where:
