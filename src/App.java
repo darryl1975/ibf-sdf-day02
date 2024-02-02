@@ -23,5 +23,24 @@ public class App {
         schoolBus.getDoorStatus();
         schoolBus.moveForward();
         schoolBus.moveRight();
+
+        List<Vehicle> vehicles = new ArrayList<>();
+        vehicles.add(avante);
+        vehicles.add(honda);
+        vehicles.add(schoolBus);
+
+        for(Vehicle veh: vehicles) {
+            System.out.println(veh.toString());
+        }
+
+        Container<Vehicle> container = new Container<>();
+        container.addItem(schoolBus);
+        container.addItem(avante);
+        container.addItem(honda);
+
+        List<Vehicle> retrieveVehicles = container.getItems();
+        for(Vehicle vehicle: retrieveVehicles) {
+            System.out.println(vehicle.toString());
+        }
     }
 }
