@@ -1,5 +1,5 @@
 
-public class Vehicle {
+public class Vehicle implements Movable {
     private String color;
     private int capacity;
     private String licensePlateNo;
@@ -102,5 +102,29 @@ public class Vehicle {
     
     public void stopSwipe() {
         this.wiperSwipped = false;
+    }
+
+    @Override
+    public void moveForward() {
+
+        System.out.println("Vehicle is moving forward...");
+    }
+
+    @Override
+    public void moveBackward() {
+
+        System.out.println("Vehicle is moving backward...");
+    }
+
+    @Override
+    public void moveLeft() {
+
+        System.out.println("Vehicle is moving left...");
+    }
+
+    @Override
+    public void moveRight() {
+
+        System.out.println("Vehicle is moving right...");
     }
 }
